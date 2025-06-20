@@ -3,22 +3,35 @@
 ## 使用技術
   - TypeScript
   - Remix
-  - Prisma
-  - Docker
 
 ## Web アプリケーションと自己の紹介用
-- エンジニアとして技術面を見てもらいたい
 - 自己を紹介したい際にこちらを見ていただく
 
 ## 以下Remix手順
+### 前提
+
+- 前提として、npmが使用できることが最低条件となっています
 
 ### Development
 
-Run the dev server:
+環境設定
+
+```sh
+
+npm install
+```
+
+起動コマンド:
 
 ```sh
 npm run dev
 ```
+
+## 問題が起きた際に以下コマンドを実行してみてください
+### 削除
+
+- 上記コマンドで起動しなかった際の手順
+  - node_modulsとpackage-lock.jsonを削除して再度 `npm install` をしてください。
 
 ### Deployment
 
