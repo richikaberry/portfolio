@@ -1,0 +1,80 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex; /* スライドを横に並べるためにフレックスボックスを使用 */
+  transition: transform 0.5s ease-in-out; /* スライドアニメーションのトランジションを設定 */
+}
+
+.carousel-slide {
+  min-width: 100%; /* 各スライドが100%の幅を持つように */
+  aspect-ratio: 27 / 4; /* 画像のアスペクト比を維持 */
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.video {
+  position: relative;
+  max-width: 200px;
+  aspect-ratio: 4 / 3;
+  top: 20%;
+  left: 150px;
+}
+
+/* ナビゲーションインジケータ */
+.carousel-nav {
+  position: relative; /* インジケータをカルーセル内に固定 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-dot {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #9b9b9b;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: -50px;
+}
+
+.carousel-dot.active {
+  background-color: #28385E;
+}
+
+.carousel-dot:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}

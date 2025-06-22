@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Carousel from "~/components/carousel";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,9 +11,10 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
+      <Carousel />
       <label>ポートフォリオ</label>
       <div>
-        <label>これまでのことを紹介</label>
+        <label>自己紹介</label>
       </div>
     </div>
   );
