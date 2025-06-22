@@ -1,0 +1,57 @@
+.TopPageContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.TopPageTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.TopPageContentSection {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.TopPageImage {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.TopPageLinksSection {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.TopPageLinks {
+  color: #28385E;
+  border: 1px solid #28385E;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.TopPageLinks label {
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.TopPageLinks:hover {
+  background-color: #28385E;
+  color: white;
+}
