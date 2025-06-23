@@ -3,7 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
+  @media (width < 767px) {
+    & {
+      margin-top: 20px;
+    }
+  }
 }
 
 .TopPageTitle {
@@ -19,20 +24,35 @@
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
   }
 }
 
 .TopPageImage {
-  width: 500px;
+  width: 100%;
   height: 300px;
   object-fit: cover;
+  @media (width < 767px) {
+    & {
+      width: 80%;
+      height: auto;
+    }
+  }
 }
 
 .TopPageLinksSection {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-top: 20px;
+  margin-top: 50px;
+  @media (width < 767px) {
+    & {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+  }
 }
 
 .TopPageLinks {
