@@ -51,13 +51,13 @@ export function Header({ header }: CustomerHeaderProps) {
               label: "トップページ",
             },
             {
+              to: url(`/localhost:5173/school`),
+              label: "学歴紹介ページ",
+            },
+            {
               to: url(`/localhost:5173/mypage`),
               label: "自己紹介ページ",
             },
-            {
-              to: url(`/localhost:5173/school`),
-              label: "学歴紹介ページ",
-            }
           ].map((link, index) => {
             return (
               <React.Fragment key={index}>
