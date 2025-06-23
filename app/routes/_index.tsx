@@ -22,10 +22,13 @@ export default function Index() {
         </div>
         <div className="TopPageLinksSection" >
           <Link to="/mypage" className="TopPageLinks" >
-            <label>紹介ページ</label>
+            <label>自己紹介ページ</label>
           </Link>
           <Link to="/career" className="TopPageLinks" >
             <label>経歴紹介ページ</label>
+          </Link>
+          <Link to="/school" className="TopPageLinks" >
+            <label>学歴紹介ページ</label>
           </Link>
         </div>
       </div>
