@@ -1,11 +1,12 @@
 import { Header } from "~/components/header"
+import "../css/portfolio.css";
 
 export default function MyPage() {
   return (
     <div>
       <Header header={true} />
-      <div>
-        <h1>マイページ</h1>
+      <div className="PortfolioMainContents" >
+        <label>マイページ</label>
       </div>
     </div>
   );

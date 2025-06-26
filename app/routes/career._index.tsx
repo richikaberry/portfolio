@@ -1,10 +1,13 @@
 import { Header } from "~/components/header"
+import "../css/portfolio.css";
 
 export default function Career() {
   return (
     <div>
       <Header header={true} />
-      <h1>これまでの経歴の紹介ページ</h1>
+      <div className="PortfolioMainContents" >
+        <label >これまでの経歴の紹介ページ</label>
+      </div>
     </div>
   )
 }

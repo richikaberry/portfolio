@@ -1,0 +1,45 @@
+.SectionBlock {
+  margin-top: 20px;
+}
+
+.SectionBlock__Link {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.SectionBlock__Image {
+  width: 200px;
+  max-height: 110px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.SectionBlock__MainContents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 190px;
+  padding: 5px 0;
+}
+
+.SectionBlock__Title {
+  width: fit-content;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #C0E4FF;
+  padding: 5px;
+}
+
+.SectionBlock__DescriptionText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  background-color: white;
+  padding: 1px 3px;
+}

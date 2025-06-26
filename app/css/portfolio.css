@@ -1,0 +1,34 @@
+.PortfolioMainContents {
+  text-align: center;
+  background-color: #F8B500;
+  padding: 50px 0;
+}
+
+.PortfolioMainContents__Title {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+.PortfolioMainContents__BubbleSpeachText {
+  position: relative;
+  width: fit-content;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  margin: 20px 0 0 10px;
+}
+
+.PortfolioMainContents__BubbleSpeachText::before {
+  /* 吹き出し部分 */
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: -16px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: white;
+  transform: translateY(-50%);
+}
