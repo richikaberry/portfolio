@@ -1,0 +1,35 @@
+.SelfBlock {
+  text-align: center;
+}
+
+.SelfBlock__Contents {
+  display: flex;
+  justify-content: center;
+}
+
+.SelfBlock__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  color: black;
+  text-decoration: none;
+}
+
+.SelfBlock__Image {
+  max-width: 200px;
+}
+
+.SelfBlock__ContentText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.SelfBlock__DescriptionSection {
+  max-width: 400px;
+}
+
+.SelfBlock__Description {
+  font-size: 12px;
+}

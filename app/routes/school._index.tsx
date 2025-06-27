@@ -7,15 +7,17 @@ export default function School() {
   return (
     <div>
       <Header header={true} />
-      {schoolData.map((page, index) => (
-        <PageBlock
-          key={index}
-          id={page.id}
-          title={page.title}
-          blockSection={page.blockSection}
-          bubbleSpeach={page.bubbleSpeach}
-        />
-      ))}
+      {
+        schoolData.map((page, index) => (
+          <PageBlock
+            key={index}
+            id={page.id}
+            title={page.title}
+            blockSection={page.blockSection}
+            bubbleSpeach={page.bubbleSpeach}
+          />
+        ))
+      }
     </div>
   )
 }
