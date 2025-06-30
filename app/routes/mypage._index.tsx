@@ -5,7 +5,7 @@ import { selfData } from "~/pamanent-data/self-data";
 
 export default function MyPage() {
   return (
-    <div>
+    <div className="MypageContainer" >
       <Header header={true} />
       {
         selfData.map((self, index) => {
